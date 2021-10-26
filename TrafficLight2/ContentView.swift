@@ -17,8 +17,12 @@ struct ContentView: View {
                 OrangeCircleView()
                 GreenCircleView()
                 Spacer()
+                ActionButton()
+                
+                
+                
             }
-            
+            .padding()
         }
         
         

@@ -14,6 +14,7 @@
 		88B2B42727287B4400B47F5E /* RedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42627287B4400B47F5E /* RedCircleView.swift */; };
 		88B2B42927287E8400B47F5E /* OrangeCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42827287E8400B47F5E /* OrangeCircleView.swift */; };
 		88B2B42B27287F5900B47F5E /* GreenCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42A27287F5900B47F5E /* GreenCircleView.swift */; };
+		88B2B42D2728834200B47F5E /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42C2728834100B47F5E /* ActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		88B2B42627287B4400B47F5E /* RedCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCircleView.swift; sourceTree = "<group>"; };
 		88B2B42827287E8400B47F5E /* OrangeCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeCircleView.swift; sourceTree = "<group>"; };
 		88B2B42A27287F5900B47F5E /* GreenCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCircleView.swift; sourceTree = "<group>"; };
+		88B2B42C2728834100B47F5E /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				88B2B42627287B4400B47F5E /* RedCircleView.swift */,
 				88B2B42827287E8400B47F5E /* OrangeCircleView.swift */,
 				88B2B42A27287F5900B47F5E /* GreenCircleView.swift */,
+				88B2B42C2728834100B47F5E /* ActionButton.swift */,
 				88B2B41C272879DC00B47F5E /* Assets.xcassets */,
 				88B2B41E272879DC00B47F5E /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 				88B2B42B27287F5900B47F5E /* GreenCircleView.swift in Sources */,
 				88B2B42927287E8400B47F5E /* OrangeCircleView.swift in Sources */,
 				88B2B42727287B4400B47F5E /* RedCircleView.swift in Sources */,
+				88B2B42D2728834200B47F5E /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

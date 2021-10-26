@@ -11,7 +11,7 @@ struct OrangeCircleView: View {
     var body: some View {
         Circle()
             .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
+            .frame(width: 130, height: 130)
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 3))
     }

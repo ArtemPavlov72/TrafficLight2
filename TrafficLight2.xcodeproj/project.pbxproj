@@ -13,6 +13,7 @@
 		88B2B420272879DC00B47F5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B2B41F272879DC00B47F5E /* Preview Assets.xcassets */; };
 		88B2B42727287B4400B47F5E /* RedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42627287B4400B47F5E /* RedCircleView.swift */; };
 		88B2B42927287E8400B47F5E /* OrangeCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42827287E8400B47F5E /* OrangeCircleView.swift */; };
+		88B2B42B27287F5900B47F5E /* GreenCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B42A27287F5900B47F5E /* GreenCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		88B2B41F272879DC00B47F5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88B2B42627287B4400B47F5E /* RedCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCircleView.swift; sourceTree = "<group>"; };
 		88B2B42827287E8400B47F5E /* OrangeCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeCircleView.swift; sourceTree = "<group>"; };
+		88B2B42A27287F5900B47F5E /* GreenCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				88B2B41A272879D900B47F5E /* ContentView.swift */,
 				88B2B42627287B4400B47F5E /* RedCircleView.swift */,
 				88B2B42827287E8400B47F5E /* OrangeCircleView.swift */,
+				88B2B42A27287F5900B47F5E /* GreenCircleView.swift */,
 				88B2B41C272879DC00B47F5E /* Assets.xcassets */,
 				88B2B41E272879DC00B47F5E /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				88B2B41B272879D900B47F5E /* ContentView.swift in Sources */,
 				88B2B419272879D900B47F5E /* TrafficLight2App.swift in Sources */,
+				88B2B42B27287F5900B47F5E /* GreenCircleView.swift in Sources */,
 				88B2B42927287E8400B47F5E /* OrangeCircleView.swift in Sources */,
 				88B2B42727287B4400B47F5E /* RedCircleView.swift in Sources */,
 			);

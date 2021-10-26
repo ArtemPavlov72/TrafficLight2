@@ -9,7 +9,11 @@ import SwiftUI
 
 struct OrangeCircleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Circle()
+            .foregroundColor(.orange)
+            .frame(width: 150, height: 150)
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.white, lineWidth: 3))
     }
 }
 

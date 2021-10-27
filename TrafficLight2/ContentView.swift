@@ -14,9 +14,9 @@ struct ContentView: View {
     }
     
     @State private var currentLight = CurrentLight.red
-    @State private var redBrightness: CGFloat = 0.8
-    @State private var orangeBrightness: CGFloat = 0.8
-    @State private var greenBrightness: CGFloat = 0.8
+    @State private var redBrightness: CGFloat = 0.5
+    @State private var orangeBrightness: CGFloat = 0.6
+    @State private var greenBrightness: CGFloat = 0.5
     
     @State private var buttonText = "START"
     
@@ -50,18 +50,18 @@ struct ContentView: View {
     
     func buttonPressed() {
         buttonText = "NEXT"
+        
         switch currentLight {
         case .red:
             redBrightness = 0.0
-            greenBrightness = 0.8
+            greenBrightness = 0.5
             currentLight = .yellow
         case .yellow:
-            redBrightness = 0.8
+            redBrightness = 0.5
             orangeBrightness = 0.0
             currentLight = .green
         case .green:
-            redBrightness = 0.8
-            orangeBrightness = 0.8
+            orangeBrightness = 0.6
             greenBrightness = 0.0
             currentLight = .red
         }

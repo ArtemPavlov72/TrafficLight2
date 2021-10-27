@@ -15,7 +15,7 @@ struct ContentView: View {
     
     private var currentLight = CurrentLight.red
     private let lightIsOn: CGFloat = 0.0
-    private let lightIsOff: CGFloat = 0.7
+    private let lightIsOff: CGFloat = 0.8
     
     var body: some View {
         ZStack {
@@ -29,16 +29,26 @@ struct ContentView: View {
                 GreenCircleView()
                     .brightness(lightIsOff)
                 Spacer()
-                ActionButton()
-                
-                
-                
+                Button(action: {}) {
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.blue)
+                            .frame(width: 250, height: 80)
+                            .cornerRadius(30)
+                        Text("START")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                }
+
             }
             .padding()
         }
     }
     
     func buttonPressed() {
+        
+            
         
     }
 }

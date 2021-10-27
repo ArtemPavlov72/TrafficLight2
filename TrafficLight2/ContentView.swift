@@ -14,6 +14,7 @@ struct ContentView: View {
     }
     
     @State private var currentLight = CurrentLight.red
+    
     @State private var redBrightness: CGFloat = 0.5
     @State private var orangeBrightness: CGFloat = 0.6
     @State private var greenBrightness: CGFloat = 0.5
@@ -33,15 +34,7 @@ struct ContentView: View {
                     .brightness(greenBrightness)
                 Spacer()
                 Button(action: {buttonPressed()}) {
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.blue)
-                            .frame(width: 250, height: 80)
-                            .cornerRadius(30)
-                        Text("\(buttonText)")
-                            .font(.largeTitle)
-                            .foregroundColor(Color.white)
-                    }
+                    buttonStyle
                 }
             }
             .padding()
@@ -64,6 +57,18 @@ struct ContentView: View {
             orangeBrightness = 0.6
             greenBrightness = 0.0
             currentLight = .red
+        }
+    }
+    
+    private var buttonStyle: some View {
+        ZStack {
+            Rectangle()
+                .foregroundColor(.blue)
+                .frame(width: 250, height: 80)
+                .cornerRadius(30)
+            Text("\(buttonText)")
+                .font(.largeTitle)
+                .foregroundColor(Color.white)
         }
     }
 }

@@ -2,7 +2,7 @@
 //  OrangeCircleView.swift
 //  TrafficLight2
 //
-//  Created by iMac on 26.10.2021.
+//  Created by Artem Pavlov on 26.10.2021.
 //
 
 import SwiftUI

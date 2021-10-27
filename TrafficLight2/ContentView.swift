@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+  
+    enum CurrentLight {
+        case red, yellow, green
+    }
+    
+    private var currentLight = CurrentLight.red
+    private let lightIsOn: CGFloat = 0.0
+    private let lightIsOff: CGFloat = 0.7
+    
     var body: some View {
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
                 RedCircleView()
+                    .brightness(lightIsOff)
                 OrangeCircleView()
+                    .brightness(lightIsOff)
                 GreenCircleView()
+                    .brightness(lightIsOff)
                 Spacer()
                 ActionButton()
                 
@@ -24,7 +36,9 @@ struct ContentView: View {
             }
             .padding()
         }
-        
+    }
+    
+    func buttonPressed() {
         
     }
 }

@@ -16,11 +16,10 @@ struct CircleLight: View {
     
     var body: some View {
         Circle()
-            .foregroundColor(color)
-            .frame(width: 130, height: 130)
-            .opacity(opacity)
-            .clipShape(Circle()) // убрать, что я обрезаю?)
-            .overlay(Circle().stroke(Color.white, lineWidth: 3))
+            .frame(width: 130, height: 130) //размер круга
+            .foregroundColor(color) //задаем цвет
+            .opacity(opacity) // задаем затемнение
+            .overlay(Circle().stroke(Color.white, lineWidth: 3)) //задаем контур
     }
 }
 

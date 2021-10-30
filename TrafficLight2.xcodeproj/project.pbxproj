@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88AD61AC272D2170005E40CB /* ChangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD61AB272D2170005E40CB /* ChangeButton.swift */; };
 		88B2B419272879D900B47F5E /* TrafficLight2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B418272879D900B47F5E /* TrafficLight2App.swift */; };
 		88B2B41B272879D900B47F5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B41A272879D900B47F5E /* ContentView.swift */; };
 		88B2B41D272879DC00B47F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B2B41C272879DC00B47F5E /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88AD61AB272D2170005E40CB /* ChangeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeButton.swift; sourceTree = "<group>"; };
 		88B2B415272879D900B47F5E /* TrafficLight2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B2B418272879D900B47F5E /* TrafficLight2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight2App.swift; sourceTree = "<group>"; };
 		88B2B41A272879D900B47F5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				88B2B418272879D900B47F5E /* TrafficLight2App.swift */,
 				88B2B41A272879D900B47F5E /* ContentView.swift */,
 				88B2B42627287B4400B47F5E /* CircleLight.swift */,
+				88AD61AB272D2170005E40CB /* ChangeButton.swift */,
 				88B2B41C272879DC00B47F5E /* Assets.xcassets */,
 				88B2B41E272879DC00B47F5E /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				88B2B41B272879D900B47F5E /* ContentView.swift in Sources */,
 				88B2B419272879D900B47F5E /* TrafficLight2App.swift in Sources */,
 				88B2B42727287B4400B47F5E /* CircleLight.swift in Sources */,
+				88AD61AC272D2170005E40CB /* ChangeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

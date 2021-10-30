@@ -15,9 +15,9 @@ struct ContentView: View {
     
     @State private var currentLight = CurrentLight.red
     
-    @State private var redBrightness: CGFloat = 0.5
-    @State private var orangeBrightness: CGFloat = 0.6
-    @State private var greenBrightness: CGFloat = 0.5
+    @State private var redOpacity: CGFloat = 0.3
+    @State private var orangeOpacity: CGFloat = 0.3
+    @State private var greenOpacity: CGFloat = 0.3
     
     @State private var buttonText = "START"
     
@@ -26,12 +26,12 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
-                RedCircleView()
-                    .brightness(redBrightness)
-                OrangeCircleView()
-                    .brightness(orangeBrightness)
-                GreenCircleView()
-                    .brightness(greenBrightness)
+              //  RedCircleView()
+               //     .opacity(redOpacity)
+          //      OrangeCircleView()
+            //        .opacity(orangeOpacity)
+           //     GreenCircleView()
+           //         .opacity(greenOpacity)
                 Spacer()
                 Button(action: {buttonPressed()}) {
                     buttonStyle
@@ -46,16 +46,16 @@ struct ContentView: View {
         
         switch currentLight {
         case .red:
-            redBrightness = 0.0
-            greenBrightness = 0.5
+            redOpacity = 1.0
+            greenOpacity = 0.3
             currentLight = .yellow
         case .yellow:
-            redBrightness = 0.5
-            orangeBrightness = 0.0
+            redOpacity = 0.3
+            orangeOpacity = 1.0
             currentLight = .green
         case .green:
-            orangeBrightness = 0.6
-            greenBrightness = 0.0
+            orangeOpacity = 0.3
+            greenOpacity = 1.0
             currentLight = .red
         }
     }

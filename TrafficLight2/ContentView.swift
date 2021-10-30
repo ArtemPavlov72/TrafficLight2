@@ -33,7 +33,7 @@ struct ContentView: View {
            //     GreenCircleView()
            //         .opacity(greenOpacity)
                 Spacer()
-                Button(action: {buttonPressed()}) {
+                Button(action: buttonPressed) {
                     buttonStyle
                 }
             }

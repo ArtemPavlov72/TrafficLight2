@@ -7,68 +7,64 @@
 
 import SwiftUI
 
+enum CurrentLight {
+    case red, yellow, green
+}
+
 struct ContentView: View {
-    
-    enum CurrentLight {
-        case red, yellow, green
-    }
     
     @State private var currentLight = CurrentLight.red
     
-    @State private var redOpacity: CGFloat = 0.3
-    @State private var orangeOpacity: CGFloat = 0.3
-    @State private var greenOpacity: CGFloat = 0.3
+    @State private var redOpacity = 0.3
+    @State private var orangeOpacity = 0.3
+    @State private var greenOpacity = 0.3
     
     @State private var buttonText = "START"
     
-    var body: some View {
-        ZStack {
-            Color(.black)
-                .ignoresSafeArea()
-            VStack {
-              //  RedCircleView()
-               //     .opacity(redOpacity)
-          //      OrangeCircleView()
-            //        .opacity(orangeOpacity)
-           //     GreenCircleView()
-           //         .opacity(greenOpacity)
-                Spacer()
-                Button(action: buttonPressed) {
-                    buttonStyle
-                }
-            }
-            .padding()
-        }
-    }
-    
+    //действия при нажатии кнопки
     func buttonPressed() {
-        buttonText = "NEXT"
+        
+        let lightIsOn = 1.0 //значение для включенной секции
+        let lightIsOff = 0.3// не горит
         
         switch currentLight {
         case .red:
-            redOpacity = 1.0
-            greenOpacity = 0.3
+            redOpacity = lightIsOn
+            greenOpacity = lightIsOff
             currentLight = .yellow
         case .yellow:
-            redOpacity = 0.3
-            orangeOpacity = 1.0
+            redOpacity = lightIsOff
+            orangeOpacity = lightIsOn
             currentLight = .green
         case .green:
-            orangeOpacity = 0.3
-            greenOpacity = 1.0
+            orangeOpacity = lightIsOff
+            greenOpacity = lightIsOn
             currentLight = .red
         }
     }
-    
-    private var buttonStyle: some View {
+}
+
+//выносим body в расширение
+extension ContentView {
+    var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(.blue)
-                .frame(width: 250, height: 80)
-                .cornerRadius(30)
-            Text("\(buttonText)")
-                .font(.largeTitle)
-                .foregroundColor(Color.white)
+            Color(.black) //заливаем черным
+                .ignoresSafeArea()
+            VStack {
+                CircleLight(color: .red, opacity: redOpacity) //красный
+                CircleLight(color: .orange, opacity: orangeOpacity) //желтый
+                CircleLight(color: .green, opacity: greenOpacity) //зеленый
+                
+                Spacer()
+                
+                ChangeButton(title: buttonText) { //передаем название кнопки
+                    if buttonText == "START" {
+                        buttonText = "NEXT"
+                    }
+                    buttonPressed() //метод по смене цветов
+                }
+            }
+            .padding()
         }
     }
 }
